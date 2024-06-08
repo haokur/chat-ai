@@ -1,0 +1,30 @@
+.qa{
+    &-wrap{
+        box-sizing: border-box;
+        padding: 40px 20px;
+        padding-bottom: 140px;
+        max-width: 800px;
+        margin: 0 auto;
+        position: relative;
+    }
+    &-search{
+        width: 100%;
+        box-sizing: border-box;
+        position: fixed;
+        bottom: 0;
+        padding-bottom: 20px;
+        left: 50%;
+        transform: translate(-50%,0);
+        display: flex;
+        justify-content: center;
+        background-color: #fff;
+    }
+    &-list{
+        margin-left: 0;
+        padding-left: 0;
+    }
+    &-item{
+        margin-bottom: 40px;
+        list-style: none;
+    }
+}

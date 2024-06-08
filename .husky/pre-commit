@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# 运行 ESLint 检查
+npx eslint .
+
+# 如果 ESLint 检查失败（有错误），则阻止提交
+if [ $? -ne 0 ]; then
+  echo "ESLint 检查失败，请解决错误后再次提交。"
+  exit 1
+fi

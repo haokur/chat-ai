@@ -1,0 +1,35 @@
+.input-wrap{
+    width: 100%;
+    max-width: 800px;
+    background-color: #F4F4F4;
+    position: relative;
+    &__mask{
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 9;
+    }
+    &__main{
+        position: relative;
+    }
+    .send-btn{
+        position: absolute;
+        right: 20px;
+        top: 50%;
+        transform: translate(0,-50%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 4px;
+        cursor: pointer;
+        background-color: #01CB80;
+        color: #fff;
+        border-radius: 4px;
+        &:disabled{
+            background-color: #ccc;
+            cursor:auto;
+        }
+    }   
+}
