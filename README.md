@@ -7,3 +7,9 @@
 6. 输入框内输入问题,按回车或者发送按钮
 7. 等待AI的回答
 8. 若AI响应错误,回答会提示连接错误
+
+### 资源
+
+1. 注册获取apiKey
+
+* 地址: (https://openrouter.ai/)[https://openrouter.ai/]
