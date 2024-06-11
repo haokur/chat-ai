@@ -5,7 +5,6 @@ export async function fetchStream(
 ) {
   try {
     const response = await fetch(input, init);
-    console.log(response, 'fetch.util.ts::7行');
     if (response.status === 401) {
       throw new Error('401 no auth');
     }

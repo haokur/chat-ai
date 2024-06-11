@@ -3,3 +3,7 @@ node_modules/*
 build/*
 .husky/*
 public/*
+dist/*
+.github/*
+.vscode/*
+.idea/*
