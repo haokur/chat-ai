@@ -102,7 +102,7 @@ export default function App() {
                 const jsonItem = JSON.parse(item);
                 answerResult += jsonItem.choices[0].delta.content;
               } catch (error) {
-                console.log(error, 'App.tsx::87行');
+                // console.log(error, 'App.tsx::87行');
               }
             }
           });

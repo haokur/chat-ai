@@ -13,7 +13,7 @@ export async function fetchStream(
     }
     const stream = new ReadableStream({
       start(controller) {
-        const reader = (response.body as ReadableStream<any>).getReader();
+        const reader = (response.body as ReadableStream).getReader();
         const decoder = new TextDecoder();
 
         function push() {
@@ -28,7 +28,6 @@ export async function fetchStream(
               push();
             })
             .catch((error) => {
-              console.error('Stream error:', error);
               controller.error(error);
             });
         }
@@ -46,7 +45,6 @@ export async function fetchStream(
       streamCallback && streamCallback(value);
     }
   } catch (error) {
-    console.log(error, 'fetch.util.ts::50行');
     throw new Error('Failed to fetch');
   }
 }

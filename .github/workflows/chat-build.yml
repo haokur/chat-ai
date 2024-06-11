@@ -21,11 +21,11 @@ jobs:
     - name: Install Dependencies
       run: npm install
 
-    - name: Build React App with Vite
+    - name: Build React App with react-app-rewired
       run: npm run build
 
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.CHAT_AI_BUILD_TOKEN }}
-        publish_dir: ./dist
+        publish_dir: ./build
